@@ -21,11 +21,6 @@ body {
     margin: 0;
 }
 
-.text {
-    font-size: 15px;
-    top: -10px;
-}
-
 .container form {
     padding: 30px 0px 0px;
 }
@@ -43,6 +38,7 @@ body {
 
 .container form .form-row .input-data input {
     display: block;
+    height: 100%;
     width: 100%;
     outline: none;
     border: none;
@@ -51,11 +47,33 @@ body {
     letter-spacing: 1px;
 }
 
+.container form .form-row .input-data label {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 5px;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.container form .form-row .input-data input:focus ~ label,
+.container form .form-row .input-data input:valid ~ label {
+    transform: translateY(-20px);
+    transition: all 0.2s ease;
+    font-size: 16px;
+    color: rgba(87, 200, 240, 0.5);
+    font-weight: bolder;
+}
+
 .container form .form-row .gender-details {
     position: relative;
     margin: 0px 20px;
 }
 
+.text {
+    font-size: 16px;
+    top: -10px;
+}
+
 input[type="radio"] {
-    margin: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 0px;
 }
