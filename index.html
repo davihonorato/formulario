@@ -17,63 +17,67 @@
         <form action="">
             <div class="form-row">
                 <div class="input-data">
-                    <input type="text" name="first-name" id="first-name">
+                    <input type="text" name="first-name" id="first-name" required>
                     <label for="first-name" class="text">Nome</label>
                 </div>
                 <div class="input-data">
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last-name" id="last-name" required>
                     <label for="last-name" class="text">Sobrenome</label>
-                </div>
-            </div>
-
-            <div class="input-data">
-                <input type="date" name="birthday" id="birthday">
-                <label for="birthday" class="text">Data de Nascimento:</label>
-            </div>
-            <div class="gender-details">
-                <span> <p>Sexo:</p> </span>
-                <div class="gender-options">
-                    <input type="radio" id="male" name="gender" value="Masculino">
-                    <label for="male" class="text">Masculino</label>
-                    <input type="radio" id="female" name="gender" value="Feminino">
-                    <label for="female" class="text">Feminino</label>
-                    <input type="radio" id="other" name="gender" value="Outro">
-                    <label for="other" class="text">Outro</label>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="input-data">
-                    <input type="text" name="city" id="city">
+                    <input type="date" name="birthday" id="birthday" required>
+                    <label for="birthday" class="text">Data de Nascimento:</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="gender-details">
+                    <label for="" class="text">Sexo:</label>
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" value="Masculino" required>
+                        <label for="male" class="text">Masculino</label>
+                        <input type="radio" id="female" name="gender" value="Feminino" required>
+                        <label for="female" class="text">Feminino</label>
+                        <input type="radio" id="other" name="gender" value="Outro" required>
+                        <label for="other" class="text">Outro</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="city" id="city" required>
                     <label for="city" class="text">Cidade</label>
                 </div>
 
                 <div class="input-data">
-                    <input type="text" name="state" id="state">
+                    <input type="text" name="state" id="state" required>
                     <label for="state" class="text">Estado</label>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="input-data">
-                    <input type="text" name="adress" id="adress">
+                    <input type="text" name="adress" id="adress" required>
                     <label for="adress" class="text">Endereço</label>
                 </div>
 
                 <div class="input-data">
-                    <input type="number" name="house-number" id="house-number">
+                    <input type="number" name="house-number" id="house-number" required>
                     <label for="house-number" class="text">Número da Casa</label>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="input-data">
-                    <input type="tel" name="phone" id="phone">
+                    <input type="tel" name="phone" id="phone" required>
                     <label for="phone" class="text">Contato</label>
                 </div>
 
                 <div class="input-data">
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                     <label for="email" class="text">E-mail</label>
                 </div>
             </div>
