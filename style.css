@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, #71cfe6 10%, #562eb3 90%);
+    background-image: linear-gradient(to right, #5ea9eb 10%, #155c9b 90%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,8 +17,14 @@ body {
 }
 
 .tittle {
+    font-size: 30px;
     text-align: center;
     margin: 0;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background: -webkit-linear-gradient(right, #5ea9eb, #1e84dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container form {
@@ -57,11 +63,10 @@ body {
 
 .container form .form-row .input-data input:focus ~ label,
 .container form .form-row .input-data input:valid ~ label {
-    transform: translateY(-20px);
+    transform: translateY(-25px);
     transition: all 0.2s ease;
     font-size: 16px;
-    color: rgba(87, 200, 240, 0.5);
-    font-weight: bolder;
+    color: #0589fc;
 }
 
 .container form .form-row .gender-details {
@@ -70,10 +75,24 @@ body {
 }
 
 .text {
+    color: rgba(0, 0, 0, 0.5);
     font-size: 16px;
     top: -10px;
 }
 
 input[type="radio"] {
     margin: 10px 0px 0px 0px;
+}
+
+.container form .form-row .input-data #my-btn {
+    background-color: #0589fc;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container form .form-row .input-data #my-btn:hover {
+    background-color: #005aa8;
 }

@@ -11,13 +11,14 @@
     <div class="container">
         <div class="tittle">
             <h1>Formulário Responsivo</h1>
+            <div class="underline"></div>
         </div>
 
         <!-- Formulário -->
         <form action="">
             <div class="form-row">
                 <div class="input-data">
-                    <input type="text" name="first-name" id="first-name" required>
+                    <input type="text" name="first-name" id="first-name" required oninvalid="this.setCustomVilidity('preencha aqui')">
                     <label for="first-name">Nome</label>
                 </div>
                 <div class="input-data">
@@ -28,13 +29,13 @@
 
             <div class="form-row">
                 <div class="input-data">
-                    <label for="birthday" class="text">Data de Nascimento:</label>
+                    <span class="text birthday-text">Data de Nascimento:</span>
                     <input type="date" name="birthday" id="birthday" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="gender-details">
-                    <label for="" class="text">Sexo:</label>
+                    <span class="text">Sexo: </span>
                     <br>
                     <input type="radio" id="male" name="gender" value="Masculino" required>
                     <label for="male">Masculino</label>
@@ -85,7 +86,7 @@
 
             <div class="form-row">
                 <div class="input-data">
-                    <input type="button" value="ENVIAR">
+                    <input type="submit" value="ENVIAR" id="my-btn">
                 </div>
             </div>
         </form>
