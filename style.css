@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Helvetica, sans-serif;
     background-image: linear-gradient(to right, #5ea9eb 10%, #155c9b 90%);
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,8 +30,12 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+h1 {
+    margin: 30px 0px;
+}
+
 .container form {
-    padding: 30px 0px 0px;
+    padding: 30px 0px 0px 0px;
 }
 
 .container form .form-row {
@@ -95,4 +102,44 @@ input[type="radio"] {
 
 .container form .form-row .input-data #my-btn:hover {
     background-color: #005aa8;
+}
+
+@media only screen and (max-width: 700px) {
+    .container{
+        padding: 0px 20px;
+    }
+
+    .tittle{
+        font-size: 30px;
+    }
+
+    .container form {
+        padding: 0px 25px;
+    }
+
+    .container form .form-row {
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .container form .form-row .input-data {
+        margin: 20px 0px;
+    }
+
+    .container form .form-row .input-data input {
+        font-size: 18px;
+    }
+
+    .text{
+        font-size: 14px;
+    }
+    .container form .form-row .input-data input:focus ~ label,
+    .container form .form-row .input-data input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    }
+
+    .container form .form-row .gender-details {
+        margin: 20px 0px 10px 0px;
+    }
 }
